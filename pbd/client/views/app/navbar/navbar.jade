@@ -3,10 +3,11 @@
 template(name="navbar")
     // Navigation
     .navbar-fixed
-        nav#nav_f.amber(role='navigation')
+        nav#nav_f.red.darken-4(role='navigation')
             .container
                 .nav-wrapper
-                    a#logo-container.brand-logo.black-text(href='#top') YELLOW DANGER BREWERY
+                    a#logo-container.brand-logo.black-text.barkarby(href='#top')
+                        | PREYBIRD Productions
                     a.button-collapse(href='#', data-activates='nav-mobile')
                         i.mdi-navigation-menu
 
@@ -31,7 +32,6 @@ template(name="account")
             i.mdi-action-settings
 
 
-
 //
 template(name="nav_container")
     each navbar
@@ -53,18 +53,18 @@ template(name="nav_items_side")
 
 //
 template(name="nav_items")
-    li.cantarell
+    li.barkarby
         a(href='#{{#unless currentUser}}{{intro.link}}{{/unless}}'
         name="intro" class="{{#if currentUser}}edit{{/if}}")= intro.text
 
-    li.cantarell
+    li.barkarby
         a(href='#{{#unless currentUser}}{{work.link}}{{/unless}}'
         name="work" class="{{#if currentUser}}edit{{/if}}")= work.text
 
-    li.cantarell
+    li.barkarby
         a(href='#{{#unless currentUser}}{{team.link}}{{/unless}}'
         name="team" class="{{#if currentUser}}edit{{/if}}")= team.text
 
-    li.cantarell
+    li.barkarby
         a(href='#{{#unless currentUser}}{{contact.link}}{{/unless}}'
         name="contact" class="{{#if currentUser}}edit{{/if}}")= contact.text

@@ -1,8 +1,7 @@
 
 nav ul a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: block;
-  font-weight: 400;
   padding: 0px 15px;
 }
 
@@ -13,18 +12,5 @@ nav ul a {
 
 .brand-logo{
   display: inline-block;
-  font-size: 1rem !important;
-  font-style: italic;
 }
 
-@media only screen and (min-width: 640px) and (max-width: 1024px) {
-  .brand-logo{
-    font-size: 1.5rem !important;
-
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .brand-logo{
-    font-size: 1.7rem !important;
-  }
-}

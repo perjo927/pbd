@@ -1,38 +1,38 @@
 template(name="footer")
-    #contact.page-footer.amber.scrollspy
+    #contact.page-footer.red.scrollspy
         .container
-            h2.center.amber.footer-header
+            h2.center.red.footer-header
                 b
-                    i KONTAKT
+                    i CONTACT
             .row
                 .col.l12.s12
                     form#form-email.col.s12
-                        .row.cantarell
+                        .row.barkarby
                             .input-field.col.s6
                                 i.mdi-action-account-circle.prefix.black-text
                                 input#fullname.validate.black-text(type='text' name='fullname' minlength="3"
-                                maxlength="40" pattern=".{3,40}" required title="(3 till 40 tecken)")
-                                label.black-text(for='fullname') Namn
+                                maxlength="40" pattern=".{3,40}" required title="(3-40 characters)"
+                                placeholder="Name Surname")
+                                label.black-text(for='fullname') Name
                             .input-field.col.s6
                                 i.mdi-communication-email.prefix.black-text
                                 input#email.validate.black-text(type='email' name='email' minlength="5"
-                                maxlength="40" required title="Vänligen ange en giltig e-post-adress")
+                                maxlength="40" required title="Please give a valid e-mail address")
                                 label.black-text(for='email') Email
                             .input-field.col.s12
                                 i.mdi-editor-mode-edit.prefix.black-text
                                 textarea#textmessage.materialize-textarea.black-text(name='textmessage' minlength="10"
                                 maxlength="500" required title="(20 to 500 characters)")
-                                label.black-text(for='textmessage') Meddelande (20-500 tecken)
+                                label.black-text(for='textmessage') Message (20-500 characters)
                             .col.s3.right
                                 button.btn.waves-effect.waves-light.black.btn-submit(type='submit', name='action')
-                                    | Skicka
+                                    | Send
                                     i.mdi-content-send.right.white-text
         hr
         .footer-copyright.amber
             .container
-                | &copy; 2015 Yellow Danger Brewery. &nbsp;
+                | &copy; 2015 PREYBIRD Productions. &nbsp;
                 | Made by
                 a.white-text(href='http://www.programmerper.com' target="_blank") Programmer Per. &nbsp;
-                | Logo by
-                a.white-text(href='http://www.mariajonsson.com' target="_blank") Maria Jonsson
+
 
