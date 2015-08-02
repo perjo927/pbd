@@ -1,0 +1,15 @@
+.img-product {
+  height: 14em;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1499px) {
+  .img-product {
+    height: 18em;
+  }
+}
+
+@media only screen and (min-width: 1500px)  {
+  .img-product {
+    height: 22em;
+  }
+}
