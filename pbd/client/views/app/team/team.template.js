@@ -15,9 +15,25 @@ Template.team.onRendered(function () {
     ];
     Materialize.scrollFire(scrollFireOptions);
 
+    this.$('.modal-trigger').leanModal();
 });
 
-/**/
+/* */
+Template.team.events({
+    "click .remove-team": function () {
+        if (Meteor.userId()) {
+            Materialize.toast(
+                '<span>Ta bort medlem? &nbsp;</span>' +
+                '<span class="btn-flat yellow-text" class="delete-team" ' +
+                'onclick= App.collections.team.remove(\'' +
+                this._id +
+                '\')>' +
+                ' TA BORT ' +
+                '</span>', 5000
+            );
+        }
+    }
+});
 
 // TODO: refactor somehow
 

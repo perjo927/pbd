@@ -1,6 +1,18 @@
 // TODO: SASS
 
+.delete-team {
+  cursor: pointer;
+}
 
+.remove-team {
+  cursor: pointer;
+  &:hover {
+    text-shadow: 0 0 5px #e2e2e2;
+  }
+  &:active {
+    text-shadow: 0 0 1px #e2e2e2;
+  }
+}
 
 .card-avatar .waves-effect {
   text-align: center;

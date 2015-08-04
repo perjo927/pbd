@@ -11,6 +11,17 @@ template(name="work")
                     each work
                         if title
                             +work_bottom
+    +work_creator
+//
+template(name="work_action_button")
+    if currentUser
+        a.btn-floating.btn-large.btn-edit.waves-light.green.right.modal-trigger(href='#work-creator')
+            i.mdi-content-add Add
+
+//
+template(name="work_remove_button")
+    if currentUser
+        i.remove-work.mdi-action-highlight-remove.left
 
 //
 template(name="work_top")
@@ -28,11 +39,13 @@ template(name="work_title")
     if workTitle
         i(name="workTitle" class="{{#if currentUser}}edit{{/if}}")
             | !{ workTitle }
+        +work_action_button
 
 template(name="work_bottom")
     li
         .col.s12.m4.l4
             .card
+                +work_remove_button
                 +work_img_container
 
                 .card-content

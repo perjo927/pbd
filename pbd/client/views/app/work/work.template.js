@@ -15,7 +15,26 @@ Template.work.onRendered(function () {
     ];
     Materialize.scrollFire(scrollFireOptions);
 
+    this.$('.modal-trigger').leanModal();
 });
+
+/* */
+Template.work.events({
+    "click .remove-work": function () {
+        if (Meteor.userId()) {
+            Materialize.toast(
+                '<span>Ta bort produkt? &nbsp;</span>' +
+                '<span class="btn-flat yellow-text" class="delete-work" ' +
+                'onclick= App.collections.work.remove(\'' +
+                this._id +
+                '\')>' +
+                ' TA BORT ' +
+                '</span>', 5000
+            );
+        }
+    }
+});
+
 
 
 /**/
