@@ -1,23 +1,25 @@
 // TODO: SASS
 
-.open-sans {
-  font-family: 'Open Sans', sans-serif;
-}
 
-.open-sans-c {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
 
 @font-face {
   font-family: 'UC';
   src: url('fonts/ucb.ttf');
 }
 
-
-
-
 .barkarby {
-  font-family: 'UC', 'Open Sans Condensed', 'Open Sans', 'Verdana', 'Arial', 'Roboto', sans-serif;
+  font-family: 'UC', 'Open Sans', 'Roboto', sans-serif;
+
+  &.title {
+    letter-spacing: 5px;
+    text-shadow: -1px -1px 5px white;
+
+  }
+}
+
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
 }
 
 

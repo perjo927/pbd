@@ -3,11 +3,11 @@
 template(name="navbar")
     // Navigation
     .navbar-fixed
-        nav#nav_f.red.darken-4(role='navigation')
+        nav#nav_f.black(role='navigation')
             .container
                 .nav-wrapper
-                    a#logo-container.brand-logo.black-text.barkarby(href='#top')
-                        | PREYBIRD Productions
+                    a#logo-container.brand-logo.black-text.open-sans(href='#top')
+                        | PREYBIRD
                     a.button-collapse(href='#', data-activates='nav-mobile')
                         i.mdi-navigation-menu
 
@@ -53,18 +53,18 @@ template(name="nav_items_side")
 
 //
 template(name="nav_items")
-    li.barkarby
+    li
         a(href='#{{#unless currentUser}}{{intro.link}}{{/unless}}'
         name="intro" class="{{#if currentUser}}edit{{/if}}")= intro.text
 
-    li.barkarby
+    li
         a(href='#{{#unless currentUser}}{{work.link}}{{/unless}}'
         name="work" class="{{#if currentUser}}edit{{/if}}")= work.text
 
-    li.barkarby
+    li
         a(href='#{{#unless currentUser}}{{team.link}}{{/unless}}'
         name="team" class="{{#if currentUser}}edit{{/if}}")= team.text
 
-    li.barkarby
+    li
         a(href='#{{#unless currentUser}}{{contact.link}}{{/unless}}'
         name="contact" class="{{#if currentUser}}edit{{/if}}")= contact.text

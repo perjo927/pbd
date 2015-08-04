@@ -1,13 +1,12 @@
 template(name="work")
     #work.section.scrollspy
         .container
-            h2.amber.center
-                b
-                    each work
-                        +work_top
+            h2.black.center.barkarby.title
+                each work
+                    +work_top
 
             .row
-                ul.scrollfire.cards.cantarell
+                ul.scrollfire.cards.open-sans
                     each work
                         if title
                             +work_bottom
@@ -37,7 +36,7 @@ template(name="work_top")
 //
 template(name="work_title")
     if workTitle
-        i(name="workTitle" class="{{#if currentUser}}edit{{/if}}")
+        b(name="workTitle" class="{{#if currentUser}}edit{{/if}}")
             | !{ workTitle }
         +work_action_button
 

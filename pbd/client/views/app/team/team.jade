@@ -1,12 +1,12 @@
 template(name="team")
     #team.section.scrollspy
         .container
-            h2.header.amber.center
+            h2.header.red.darken-3.center.barkarby.title
                 each team
                     +team_top
 
             .row
-                ul.scrollfire.persons.cantarell
+                ul.scrollfire.persons
                     each team
                         if title
                             +team_bottom
@@ -28,8 +28,7 @@ template(name="team_top")
 template(name="team_title")
     if teamTitle
         b(name="teamTitle" class="{{#if currentUser}}edit{{/if}}")
-            i
-                | !{ teamTitle }
+            | !{ teamTitle }
         +team_action_button
 
 //

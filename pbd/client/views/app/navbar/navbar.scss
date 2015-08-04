@@ -1,8 +1,12 @@
+nav {
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+}
 
 nav ul a {
   font-size: 1.5rem;
   display: block;
   padding: 0px 15px;
+  letter-spacing: 2px;
 }
 
 #sign-out {
@@ -12,5 +16,8 @@ nav ul a {
 
 .brand-logo{
   display: inline-block;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+  letter-spacing: 3px;
 }
 

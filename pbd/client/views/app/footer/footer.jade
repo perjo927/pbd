@@ -1,13 +1,12 @@
 template(name="footer")
     #contact.page-footer.red.scrollspy
         .container
-            h2.center.red.footer-header
-                b
-                    i CONTACT
+            h2.center.red.darken-2.footer-header.barkarby.title
+                b CONTACT
             .row
                 .col.l12.s12
                     form#form-email.col.s12
-                        .row.barkarby
+                        .row
                             .input-field.col.s6
                                 i.mdi-action-account-circle.prefix.black-text
                                 input#fullname.validate.black-text(type='text' name='fullname' minlength="3"
@@ -29,7 +28,7 @@ template(name="footer")
                                     | Send
                                     i.mdi-content-send.right.white-text
         hr
-        .footer-copyright.amber
+        .footer-copyright.red.darken-2
             .container
                 | &copy; 2015 PREYBIRD Productions. &nbsp;
                 | Made by
