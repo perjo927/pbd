@@ -7,6 +7,12 @@ nav ul a {
   display: block;
   padding: 0px 15px;
   letter-spacing: 2px;
+  text-shadow: 0 0 5px white;
+  color: white;
+
+  &:hover {
+    text-shadow: -0 0 35px white !important;
+  }
 }
 
 #sign-out {
@@ -14,11 +20,29 @@ nav ul a {
   right: 10px;
 }
 
+@keyframes example {
+  from  {
+    text-shadow: 0 0 5px white !important;
+  }
+  to {
+    text-shadow: -0 0 50px #f44336 !important;  // material-red TODO
+  }
+}
+
 .brand-logo{
   display: inline-block;
   font-weight: bold;
-  font-size: 3rem;
-  text-shadow: 0 0 5px white;
-  letter-spacing: 7px;
+  font-size: 3.3rem !important;
+  //text-shadow: 0 0 5px #ff0000 !important; // material-red TODO
+  letter-spacing: 12px !important;
+  //transition: text-shadow 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  &:hover {
+    //text-shadow: 0 0 5px #f44336 !important;
+  }
 }
 

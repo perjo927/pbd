@@ -2,8 +2,9 @@
 
 template(name="navbar")
     // Navigation
+    // TODO: #top ?
     .navbar-fixed
-        nav#nav_f.black(role='navigation')
+        nav.black.z-depth-5(role='navigation')
             .container
                 .nav-wrapper
                     a#logo-container.brand-logo.black-text.barkarby.title(href='#top')
@@ -55,16 +56,24 @@ template(name="nav_items_side")
 template(name="nav_items")
     li
         a(href='#{{#unless currentUser}}{{intro.link}}{{/unless}}'
-        name="intro" class="{{#if currentUser}}edit{{/if}}")= intro.text
+        name="intro" class="{{#if currentUser}}edit{{/if}}")
+            i.mdi-av-play-circle-outline
+            //= intro.text
 
     li
         a(href='#{{#unless currentUser}}{{work.link}}{{/unless}}'
-        name="work" class="{{#if currentUser}}edit{{/if}}")= work.text
+        name="work" class="{{#if currentUser}}edit{{/if}}")
+            i.mdi-av-volume-up
+            //= work.text
 
     li
         a(href='#{{#unless currentUser}}{{team.link}}{{/unless}}'
-        name="team" class="{{#if currentUser}}edit{{/if}}")= team.text
+        name="team" class="{{#if currentUser}}edit{{/if}}")
+            i.mdi-social-people-outline
+            //= team.text
 
     li
         a(href='#{{#unless currentUser}}{{contact.link}}{{/unless}}'
-        name="contact" class="{{#if currentUser}}edit{{/if}}")= contact.text
+        name="contact" class="{{#if currentUser}}edit{{/if}}")
+            i.mdi-communication-email
+            //= contact.text
