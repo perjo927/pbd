@@ -1,31 +1,9 @@
 var introTitle = {
     //icon: "",
-    mdTitle: "Ett mikrobryggeri i __Norrk&ouml;ping__ med inriktning mot __&ouml;l__. Vi brygger, du dricker.",
-    creator: "Per"
-};
-
-var introText1 = {
-    icon: "mdi-image-flash-on",
-    mdText: "##### __R&auml;ttvist__" +
-        "\n" +
-        "Vi anv&auml;nder bara de b&auml;sta r&aring;varorna odlade av lokalbefolkning.",
-    creator: "Per"
-};
-var introText2 = {
-    icon: "mdi-action-favorite",
-    mdText: "##### __Passion__" +
-    "\n" +
-    "Vi brinner f&ouml;r &ouml;l.",
-    creator: "Per"
-};
-var introText3 = {
-    icon: "mdi-maps-local-drink",
-    mdText: "##### __Utbud__" +
-    "\n" +
-    "V&auml;lj bland 103 sorter.",
+    mdTitle: '<i>"This <em>modern take on the jazz idiom </em> makes a nice change from punching kick drums and gnarly synths. What is highly successful is <em> the natural way in which free jazz and the DAW work together </em>."</i> <h6> <b>Computer Music Magazine </b></h6>',
     creator: "Per"
 };
 
 VM.sections["intro"] = [
-    introTitle,introText1, introText2, introText3
+    introTitle
 ];

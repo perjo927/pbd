@@ -4,10 +4,14 @@ template(name="navbar")
     // Navigation
     // TODO: #top ?
     .navbar-fixed
-        nav.black.z-depth-5(role='navigation')
+        nav.z-depth-3(role='navigation' class="{{Session 'theme'}}")
             .container
                 .nav-wrapper
-                    a#logo-container.brand-logo.black-text.barkarby.title(href='#top')
+                    //ul.left
+                        li
+                            img.responsive-img(src='img/bird.png')
+                            | &nbsp;
+                    a#logo-container.brand-logo.barkarby.title(href='#top' class="{{Session 'theme'}}-text")
                         | PREYBIRD
                     a.button-collapse(href='#', data-activates='nav-mobile')
                         i.mdi-navigation-menu
@@ -30,7 +34,11 @@ template(name="account")
     // Dropdown Trigger
     li
         a.dropdown-button(href='#!', data-activates='account-dropdown')
-            i.mdi-action-settings
+            if Session 'theme' eq='white'
+                i.mdi-action-settings(class="black-text")
+            else
+                i.mdi-action-settings(class="white-text")
+
 
 
 //
@@ -57,23 +65,35 @@ template(name="nav_items")
     li
         a(href='#{{#unless currentUser}}{{intro.link}}{{/unless}}'
         name="intro" class="{{#if currentUser}}edit{{/if}}")
-            i.mdi-av-play-circle-outline
-            //= intro.text
+            if Session 'theme' eq='white'
+                i.mdi-av-play-circle-outline(class="black-text")
+            else
+                i.mdi-av-play-circle-outline(class="white-text")
+            //= intro.text TODO: Icon
 
     li
         a(href='#{{#unless currentUser}}{{work.link}}{{/unless}}'
         name="work" class="{{#if currentUser}}edit{{/if}}")
-            i.mdi-av-volume-up
-            //= work.text
+            if Session 'theme' eq='white'
+                i.mdi-av-volume-up(class="black-text")
+            else
+                i.mdi-av-volume-up(class="white-text")
+            //= work.text TODO: Icon
 
     li
         a(href='#{{#unless currentUser}}{{team.link}}{{/unless}}'
         name="team" class="{{#if currentUser}}edit{{/if}}")
-            i.mdi-social-people-outline
-            //= team.text
+            if Session 'theme' eq='white'
+                i.mdi-social-people-outline(class="black-text")
+            else
+                i.mdi-social-people-outline(class="white-text")
+            //= team.text TODO: Icon
 
     li
         a(href='#{{#unless currentUser}}{{contact.link}}{{/unless}}'
         name="contact" class="{{#if currentUser}}edit{{/if}}")
-            i.mdi-communication-email
-            //= contact.text
+            if Session 'theme' eq='white'
+                i.mdi-communication-email(class="black-text")
+            else
+                i.mdi-communication-email(class="white-text")
+            //= contact.text TODO: Icon

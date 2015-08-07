@@ -1,8 +1,9 @@
 // TODO: ES6
 // TODO: Refactor each content area session helper somehow
 
-Session.setDefault("editingIntroIcon", false);
-Session.setDefault("editingIntroText", false);
+Session.setDefault("isPlaying", false);
+Session.setDefault("theme", "black");
+
 Session.setDefault("editingIntroTitle", false);
 
 Session.setDefault("editingNavbar", false);

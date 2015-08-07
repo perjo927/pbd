@@ -8,8 +8,15 @@ Template.navbar.events({
     "click #sign-out": function (event,template) {
         Meteor.logout();
         Materialize.toast("Du &auml;r nu utloggad.", 5000, 'black');
+    },
+    'click .black-text': function (event, template) {
+        Session.set("theme", "white");
+    },
+    'click .white-text': function (event, template) {
+        Session.set("theme", "black");
     }
 });
+
 
 /**/
 Template.nav_items.events({

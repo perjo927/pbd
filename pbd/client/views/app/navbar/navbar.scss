@@ -8,7 +8,6 @@ nav ul a {
   padding: 0px 15px;
   letter-spacing: 2px;
   text-shadow: 0 0 5px white;
-  color: white;
 
   &:hover {
     text-shadow: -0 0 35px white !important;
@@ -22,10 +21,13 @@ nav ul a {
 
 @keyframes example {
   from  {
-    text-shadow: 0 0 5px white !important;
+    text-shadow: 1px 0 5px white !important;
+    letter-spacing: 12px !important;
+
   }
   to {
-    text-shadow: -0 0 50px #f44336 !important;  // material-red TODO
+    text-shadow: -0 0 25px #f44336 !important;  // material-red TODO
+    letter-spacing: 13.5px !important;
   }
 }
 
@@ -34,10 +36,11 @@ nav ul a {
   font-weight: bold;
   font-size: 3.3rem !important;
   //text-shadow: 0 0 5px #ff0000 !important; // material-red TODO
-  letter-spacing: 12px !important;
+  //letter-spacing: 12px !important;
   //transition: text-shadow 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  // TODO: prefix away with compass
   animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 

@@ -3,10 +3,15 @@ template(name="hero")
         .row
             .center
                 // Switch to b5 for black theme
-                img.responsive-img#ydb-logo(src="img/b2.png")
+                if Session 'theme' eq='black'
+                    img#ydb-logo.responsive-img.logo-black(src="img/b2.png")
+                else
+                    img#ydb-logo.responsive-img.logo-white(src="img/b5.png")
             h1.center
                 a(href='#intro').black-text
                     i.mdi-navigation-arrow-drop-down-circle.read-more
+                a(href='#intro').black-text
+                    i.mdi-av-play-circle-fill
             h5.center
                 // Theme switching
                 | Don't push this button
