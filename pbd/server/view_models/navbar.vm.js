@@ -1,19 +1,23 @@
 var navbar = {
     intro: {
         link: "intro",
-        text: "OM"
+        text: "PLAY",
+        icon: "mdi-av-play-circle-outline"
     },
     work: {
         link: "work",
-        text: "PRODUKTER"
+        text: "RECORDS",
+        icon: "mdi-av-hearing"
     },
     team: {
         link: "team",
-        text: "TEAM"
+        text: "COLLABS",
+        icon: "mdi-social-people-outline"
     },
     contact: {
         link: "contact",
-        text: "KONTAKT"
+        text: "CONTACT",
+        icon: "mdi-communication-email"
     }
 };
 

@@ -14,6 +14,17 @@ Template.navbar.events({
     },
     'click .white-text': function (event, template) {
         Session.set("theme", "black");
+    },
+    'click .toggle': function () {
+        Session.set("isPlaying", true);
+        // TODO: Refactor, namespace
+        var iframeElement = document.querySelector('iframe');
+        var widget = SC.Widget(iframeElement);
+        widget.toggle();
+        $(".toggle").toggleClass("toggle-back");
+    },
+    'click .toggle-back': function () {
+        Session.set("isPlaying", false);
     }
 });
 

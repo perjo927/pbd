@@ -1,7 +1,7 @@
 template(name="team")
     #team.section.scrollspy
         .container
-            h2.header.red.darken-3.center.barkarby.title
+            h2.header.red.darken-2.center.barkarby.title
                 each team
                     +team_top
 
@@ -59,7 +59,8 @@ template(name="team_img_container")
 template(name="team_img")
     .waves-effect.waves-block.waves-light(name="img" class="{{#if currentUser}}edit{{/if}}")
         if img
-            img.activator(src='#{img}')
+            a(href="#{link}" target="_blank")
+                img.activator(src='#{img}')
         else
             img.activator(src='img/avatar1.png}')
 

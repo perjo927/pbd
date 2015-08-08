@@ -1,17 +1,49 @@
 // TODO: Sass
 
+@keyframes play {
+  from  {
+    text-shadow: 1px 0 5px black !important;
+
+  }
+  to {
+    text-shadow: -0 0 100px #f44336 !important;  // material-red TODO
+  }
+}
+
+@keyframes stopp {
+  from  {
+    text-shadow: 1px 0 5px black !important;
+
+  }
+  to {
+    text-shadow: -0 0 100px yellow !important;  // material-red TODO
+  }
+}
+
 
 #ydb-logo {
   max-height: 80vh;
   cursor: pointer;
 }
 
+#stop {
+  animation-name: stopp;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 .read-more {
   margin-bottom: 0.5em;
 
+  animation-name: play;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
   &:hover {
-    text-shadow: 0 0 50px yellow;
-    font-weight: 900;
+   // text-shadow: 0 0 50px yellow;
+   // font-weight: 900;
   }
 }
 

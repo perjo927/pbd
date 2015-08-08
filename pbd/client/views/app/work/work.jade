@@ -1,7 +1,7 @@
 template(name="work")
     #work.section.scrollspy
         .container
-            h2.header.red.darken-3.center.barkarby.title
+            h2.header.red.darken-2.center.barkarby.title
                 each work
                     +work_top
 
@@ -51,6 +51,9 @@ template(name="work_bottom")
                     span.card-title.activator.grey-text.text-darken-4
                         | !{ title }
                         i.mdi-navigation-more-vert.right
+                    h6
+                        a(href="#{link}" target="_blank") Allmusic entry
+
 
                 .card-reveal
                     +work_name_container

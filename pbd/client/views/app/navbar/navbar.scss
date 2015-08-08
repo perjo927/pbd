@@ -17,9 +17,10 @@ nav ul a {
 #sign-out {
   position: fixed;
   right: 10px;
+
 }
 
-@keyframes example {
+@keyframes glow {
   from  {
     text-shadow: 1px 0 5px white !important;
     letter-spacing: 12px !important;
@@ -31,6 +32,8 @@ nav ul a {
   }
 }
 
+
+
 .brand-logo{
   display: inline-block;
   font-weight: bold;
@@ -39,7 +42,7 @@ nav ul a {
   //letter-spacing: 12px !important;
   //transition: text-shadow 1s cubic-bezier(0.22, 0.61, 0.36, 1);
   // TODO: prefix away with compass
-  animation-name: example;
+  animation-name: glow;
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -49,3 +52,27 @@ nav ul a {
   }
 }
 
+@keyframes play-mini {
+  from  {
+    font-weight: 100 !important;
+
+  }
+  to {
+    font-weight: 900 !important;
+  }
+}
+
+// TODO: refactor
+
+.toggle {
+  color: red !important;
+  text-shadow: none !important;
+}
+
+.toggle.toggle-back {
+  color: yellow !important;
+  animation-name: play-mini;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

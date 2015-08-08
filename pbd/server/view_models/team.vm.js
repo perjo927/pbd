@@ -1,30 +1,34 @@
 var teamTitle = {
-    teamTitle: "TEAM",
+    teamTitle: "COLLABS",
     creator: "Per"
 };
 
 var person1 = {
-    title: "Grundare",
-    name: "Person 1",
-    img: "img/avatar1.png",
+    title: "Rap legend",
+    name: "Prince Po",
+    img: "img/t1.jpg",
+    link: "https://soundcloud.com/djpjgj/school-em-featuring-prince-po-vincent",
     creator: "Per"
 };
 var person2 = {
-    title: "Bryggare",
-    name: "Person 2",
-    img: "img/avatar2.png",
+    title: "Soulful vocalist",
+    name: "Sanna Hartfield",
+    img: "img/t2.jpg",
+    link: "https://soundcloud.com/djpjgj/why-feat-sanna-hartfield",
     creator: "Per"
 };
 var person3 = {
-    title: "Uppfinnare",
-    name: "Person 3",
-    img: "img/avatar3.png",
+    title: "Jazz guitarist",
+    name: "Pontus Rubin",
+    img: "img/t3.jpg",
+    link: "https://soundcloud.com/djpjgj/stargates-sir-preybird-cd",
     creator: "Per"
 };
 var person4 = {
-    title: "S&auml;ljare",
-    name: "Person 4",
-    img: "img/avatar4.png",
+    title: "Guitar wizard",
+    name: "Vincent S. Lindberg",
+    img: "img/t4.jpg",
+    link: "https://soundcloud.com/djpjgj/preybird-vs-sportbar-farhuset-remix-1",
     creator: "Per"
 };
 

@@ -14,7 +14,6 @@ Template.intro.onRendered(function () {
         }
     ];
     Materialize.scrollFire(scrollFireOptions);
-
 });
 
 // TODO: Refactor the mess

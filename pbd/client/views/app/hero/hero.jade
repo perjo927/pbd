@@ -8,13 +8,11 @@ template(name="hero")
                 else
                     img#ydb-logo.responsive-img.logo-white(src="img/b5.png")
             h1.center
-                a(href='#intro').black-text
-                    i.mdi-navigation-arrow-drop-down-circle.read-more
-                a(href='#intro').black-text
-                    i.mdi-av-play-circle-fill
+                unless Session 'isPlaying'
+                    a(href='#intro').black-text
+                        i#play.mdi-navigation-arrow-drop-down-circle.read-more
+                else
+                    a(href='#intro').black-text
+                        i#stop.mdi-av-play-circle-fill
             h5.center
-                // Theme switching
-                | Don't push this button
-                // Soundcloud play
-                | PLAY
                 // TODO: bottom-modal eller collapsa ut en ny modul?
