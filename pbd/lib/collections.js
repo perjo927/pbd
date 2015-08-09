@@ -6,6 +6,21 @@ ContentAreas.forEach(function (area) {
 
 
 /* LIB */
+App.Collection.createSubscriptions = function(subscriptionsObject) {
+    var subscriptions = [];
+
+    Object.keys(subscriptionsObject).forEach(function(collection) {
+        var parameters = subscriptionsObject[collection];
+        if (parameters === false) {
+            subscriptions.push(Meteor.subscribe(collection));
+        } else {
+            subscriptions.push(Meteor.subscribe(collection, parameters));
+        }
+    });
+    return subscriptions;
+};
+
+
 App.Collection.insert = function (collection, document, callback) {
     collection.insert(document, function (error, id) {
         if (!!error) {

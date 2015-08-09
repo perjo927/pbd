@@ -8,7 +8,7 @@ Router.route('/', {
     waitOn: function() {
         var noParams = false;
 
-        return CreateSubscriptions({
+        return App.Collection.createSubscriptions({
             "intro": noParams,
             "work": noParams,
             "team": noParams,
